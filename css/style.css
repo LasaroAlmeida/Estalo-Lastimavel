@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#init{
+    width: 100%;
+    height: 100%;
+    background-color: #0658d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#init > h2{
+    margin-bottom: 20px;
+    font-size: 4.5em;
+    color: #ff8008;
+}
+#init > a{
+    height: 50px;
+    width: 150px;
+    font-size: 2em;
+    border: 3px #c3c3c3;
+    border-radius: 5px;
+    background-color: #ffee39;
+    color: #141;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5em;
+}

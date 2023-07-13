@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/fundo_lateral.png');
+    display: flex;
+    align-items: center;
+}
+
+main {
+    border-radius: 20px;
+    background-color: rgba(137, 43, 226, 0.678);
+    width: 1120px;
+    margin: 0 auto;
+    height: 667px;
+}
+
+#jogador_1, #jogador_2 {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+#tabuleiro {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#jogador_2 {
+    margin: 0 auto;
+    flex-flow: row-reverse;
+}
+
+.cenarios {
+    width: 30%;
+    height: 97%;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.campo {
+    border-radius: 10px;
+    background-image: url('../images/campos_cenarios.png');
+    height: 170px;
+    width: 132px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 5px 0 0 8px;
+    gap: 7px;
+}
+
+.imagem {
+    border-radius: 10px;
+    height: 110px;
+    width: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#round, #energia, .perfil, .campo_cartas {
+    height: 100%;
+    border-radius: 20px;
+}
+
+#round, #energia, .perfil {
+    width: 12%;
+}
+
+#round, #energia {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+#round {
+    background-image: url('../images/rodadas.png');
+}
+
+#energia {
+
+    background-image: url('../images/botao_energia.png');
+}
+
+#round>span {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 60px;
+}
+
+#energia>span {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+}
+
+#energia>button {
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: #ffcccc;
+}
+
+.perfil {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: bisque;
+}
+
+.perfil>p {
+    font-size: 1.5em;
+}
+
+
+.campo_cartas {
+    width: 45%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(124, 85, 57);
+}
+
+#cartas_j2 {
+    gap: 8px;
+}
+
+.carta {
+    border-radius: 5px;
+    width: 55px;
+    height: 75px;
+}
+
+#mesa_j2>p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
